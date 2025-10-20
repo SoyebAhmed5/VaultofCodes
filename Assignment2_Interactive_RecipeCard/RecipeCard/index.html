@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Recipe Card</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+<body>
+
+  <div class="recipe-card">
+    <h1 class="title">🍫 Chocolate Cake</h1>
+    <img src="images/chocolate-cake.jpg" alt="Chocolate Cake" class="recipe-img">
+
+    <div class="info">
+      <p><strong>Prep Time:</strong> 45 mins</p>
+      <p><strong>Serves:</strong> 6 people</p>
+    </div>
+
+    <button id="toggleIngredients">Show Ingredients</button>
+    <ul id="ingredients" class="hidden">
+      <li>1½ cups flour</li>
+      <li>1 cup sugar</li>
+      <li>½ cup cocoa powder</li>
+      <li>2 eggs</li>
+      <li>1 cup milk</li>
+      <li>1 tsp baking powder</li>
+    </ul>
+
+    <button id="toggleSteps">Show Steps</button>
+    <ol id="steps" class="hidden">
+      <li>Preheat oven to 180°C (350°F).</li>
+      <li>Mix dry ingredients together.</li>
+      <li>Add eggs and milk, stir until smooth.</li>
+      <li>Pour into a baking pan.</li>
+      <li>Bake for 30-35 minutes.</li>
+      <li>Cool and serve with chocolate frosting.</li>
+    </ol>
+
+    <div class="controls">
+      <button id="startCooking">Start Cooking</button>
+      <button id="nextStep" disabled>Next</button>
+      <button id="printRecipe">🖨️ Print Recipe</button>
+    </div>
+
+    <div class="progress-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <div id="timer" class="timer hidden">⏱ 45:00</div>
+  </div>
+
+  
+</body>
+</html>
