@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editkaro.in — Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="brand">
+        <div class="logo">EK</div>
+        <div>
+          <h1>Editkaro.in — Portfolio</h1>
+          <p class="lead">
+            Social media & video editing — reels, montages, ads, anime AMVs,
+            color grades, and more.
+          </p>
+        </div>
+      </div>
+
+      <div class="controls">
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="short">Short-form</button>
+          <button class="filter-btn" data-filter="long">Long-form</button>
+          <button class="filter-btn" data-filter="gaming">Gaming</button>
+          <button class="filter-btn" data-filter="football">Football</button>
+          <button class="filter-btn" data-filter="ecommerce">eCommerce</button>
+          <button class="filter-btn" data-filter="doc">Documentary</button>
+          <button class="filter-btn" data-filter="color">Color Grade</button>
+          <button class="filter-btn" data-filter="anime">Anime</button>
+          <button class="filter-btn" data-filter="ads">Ads</button>
+        </div>
+
+        <div class="search">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M21 21l-4.35-4.35"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          <input id="searchInput" placeholder="search title or tag" />
+        </div>
+      </div>
+    </header>
+
+    <!-- GALLERY -->
+    <main>
+      <section class="grid" id="gallery">
+        <!-- Sample video cards -->
+        <article
+          class="card"
+          data-cat="short"
+          data-title="Temple & Webster Short Ad">
+          <div class="thumb">
+            <img
+              src="https://img.youtube.com/vi/iXgCDzwi00U/maxresdefault.jpg"
+              alt="Short-form Thumbnail" />
+            <div class="play-pill">▶ Short</div>
+          </div>
+          <div class="meta">
+            <h3>Temple & Webster — Short Ad</h3>
+            <p>Quick 30s product highlight for social media.</p>
+          </div>
+        </article>
+
+        <article
+          class="card"
+          data-cat="long"
+          data-title="Long-form Editing Example">
+          <div class="thumb">
+            <img
+              src="https://img.youtube.com/vi/1DZlKwQ7bIQ/maxresdefault.jpg"
+              alt="Long-form Thumbnail" />
+            <div class="play-pill">▶ Long</div>
+          </div>
+          <div class="meta">
+            <h3>Long-form Editing Example</h3>
+            <p>A cinematic longer edit suitable for YouTube uploads.</p>
+          </div>
+        </article>
+
+        <article class="card" data-cat="gaming" data-title="Gaming Montage">
+          <div class="thumb">
+            <img
+              src="https://img.youtube.com/vi/zZZ4kkmFP0c/maxresdefault.jpg"
+              alt="Gaming Thumbnail" />
+            <div class="play-pill">▶ Gaming</div>
+          </div>
+          <div class="meta">
+            <h3>Gaming Montage</h3>
+            <p>High-energy gaming edits with transitions and music sync.</p>
+          </div>
+        </article>
+
+        <article class="card" data-cat="football" data-title="Football Edits">
+          <div class="thumb">
+            <img
+              src="https://img.youtube.com/vi/i8ngAU1jAjY/maxresdefault.jpg"
+              alt="Football Thumbnail" />
+            <div class="play-pill">▶ Football</div>
+          </div>
+          <div class="meta">
+            <h3>Football Edits</h3>
+            <p>Reels and edits of iconic football goals and moments.</p>
+          </div>
+        </article>
+
+        <article
+          class="card"
+          data-cat="ecommerce"
+          data-title="Temple & Webster eCommerce Ad">
+          <div class="thumb">
+            <img
+              src="https://img.youtube.com/vi/gN6wFjQlsm4/maxresdefault.jpg"
+              alt="ecommerce thumbnail" />
+            <div class="play-pill">▶ Ad</div>
+          </div>
+          <div class="meta">
+            <h3>Temple & Webster — eCommerce Ad</h3>
+            <p>Stylish product storytelling for digital campaigns.</p>
+          </div>
+        </article>
+
+        <article class="card" data-cat="doc" data-title="Documentary Edit">
+          <div class="thumb">
+            <img
+              src="https://img.youtube.com/vi/O7lPO2AeG9Q/maxresdefault.jpg"
+              alt="doc thumb" />
+            <div class="play-pill">▶ Doc</div>
+          </div>
+          <div class="meta">
+            <h3>Documentary-style Edit</h3>
+            <p>Story-driven edit with natural transitions and pacing.</p>
+          </div>
+        </article>
+
+        <article
+          class="card"
+          data-cat="color"
+          data-title="Color Grading Transformations">
+          <div class="thumb">
+            <img
+              src="https://img.youtube.com/vi/NXJjttnp9YI/maxresdefault.jpg"
+              alt="color grade thumb" />
+            <div class="play-pill">▶ Color</div>
+          </div>
+          <div class="meta">
+            <h3>Color Grading Transformations</h3>
+            <p>Before & after color grading for cinematic effects.</p>
+          </div>
+        </article>
+
+        <article class="card" data-cat="anime" data-title="Anime AMV">
+          <div class="thumb">
+            <img
+              src="https://img.youtube.com/vi/CMF3qeu7fHY/maxresdefault.jpg"
+              alt="anime thumb" />
+            <div class="play-pill">▶ AMV</div>
+          </div>
+          <div class="meta">
+            <h3>Anime AMV Mix</h3>
+            <p>Anime edits synced perfectly to trending audio tracks.</p>
+          </div>
+        </article>
+
+        <article class="card" data-cat="ads" data-title="Nike Commercial">
+          <div class="thumb">
+            <img
+              src="https://img.youtube.com/vi/b0Ezn5pZE7o/maxresdefault.jpg"
+              alt="ad thumb" />
+            <div class="play-pill">▶ Ad</div>
+          </div>
+          <div class="meta">
+            <h3>Nike — So Win (Commercial)</h3>
+            <p>High-production ad example with strong storytelling.</p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- MODAL -->
+    <div id="modal" class="modal">
+      <div class="inner">
+        <button id="closeModal" class="close">✕</button>
+        <iframe id="player" src="" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        Built for Editkaro.in | Responsive Portfolio Page | Made with HTML, CSS
+        & JS
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
